@@ -17,8 +17,7 @@ A React application built with Vinxi, TailwindCSS, and TypeScript.
 
 - Node.js (Latest LTS version recommended)
 - npm or yarn
-- Environment variables configured (refer to <mcfile name=".env.example" path="./env.example"></mcfile> for required variables)
-
+- Environment variables configured 
 ### Installation
 
 1. Clone the repository
