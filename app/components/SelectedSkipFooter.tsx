@@ -59,7 +59,7 @@ export function SelectedSkipFooter({
 
             <Button
               onClick={onContinue}
-              className="bg-gray-900 hover:bg-gray-800 text-white px-4 sm:px-6 py-2 flex-shrink-0"
+              className="bg-gray-900 cursor-pointer hover:bg-gray-800 text-white px-4 sm:px-6 py-2 flex-shrink-0"
               size="sm"
             >
               <span className="hidden xs:inline">Continue</span>
