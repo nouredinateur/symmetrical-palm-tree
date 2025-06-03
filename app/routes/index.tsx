@@ -3,6 +3,8 @@ import * as fs from "node:fs";
 import { createFileRoute, useRouter } from "@tanstack/react-router";
 import { createServerFn } from "@tanstack/react-start";
 import { Button } from "@/components/ui/button";
+import { useFetch } from "@/hooks/useFetch";
+import { BinData, BinDataResponse } from "../types/api";
 const filePath = "count.txt";
 
 async function readCount() {
@@ -32,7 +34,9 @@ export const Route = createFileRoute("/")({
 function Home() {
   const router = useRouter();
   const state = Route.useLoaderData();
-
+ const skips = useFetch<BinDataResponse>(
+    import.meta.env.VITE_API_ENDPOINT as string
+  );
   return (
     <Button
       type="button"
