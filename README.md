@@ -1,6 +1,7 @@
 # REM
 
-A React application built with Vinxi, TailwindCSS, and TypeScript.
+A React application built with TanStack
+Start.
 
 ## Technologies
 
